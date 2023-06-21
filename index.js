@@ -175,3 +175,28 @@ console.log(d, myStr);
 // console.log(myDate.getDay());
 // console.log(myDate.getMinutes());
 // console.log(myDate.getHours());
+
+// 12. JS DOM Manipulation
+let elem = document.getElementById('click');
+console.log(elem);
+let elemclass = document.getElementsByClassName('container');
+console.log(elemclass);
+//elemclass[0].style.background = "yellow";
+elemclass[0].classList.add("bg-primary");
+elemclass[0].classList.add("text-success");
+// console.log(elem.innerHTML);
+// console.log(elem.innerText);
+// console.log(elemclass[0].innerHTML);
+// console.log(elemclass[0].innerText);
+//elemclass[0].classList.remove("text-success");
+//document.getElementById('click').style.border = '2px solid blue';
+
+tn = document.getElementsByTagName('div');
+console.log(tn);
+createdElement = document.createElement('p');
+createdElement.innerText = "This is a created para";
+tn[0].appendChild(createdElement);
+createdElement2 = document.createElement('b');
+createdElement2.innerText = "This is a created bold";
+tn[0].replaceChild(createdElement2, createdElement);
+//removeChild(element);
