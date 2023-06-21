@@ -200,3 +200,86 @@ createdElement2 = document.createElement('b');
 createdElement2.innerText = "This is a created bold";
 tn[0].replaceChild(createdElement2, createdElement);
 //removeChild(element);
+
+//Selecting using Query
+sel = document.querySelector('.container');
+console.log(sel);
+sel = document.querySelectorAll('.container');
+console.log(sel);
+
+// 13. Events in JS
+// function clicked(){
+//     console.log('The button was clicked');
+// }
+// window.onload = function(){
+//     console.log('The document was loaded')
+// }
+
+// firstContainer.addEventListener('click', function(){
+//     document.querySelectorAll('.container')[1].innerHTML = "<b> We have clicked</b>"
+//     console.log("Clicked on container");
+// })
+
+// firstContainer.addEventListener('mouseover', function(){
+//     console.log("Mouse on container");
+// })
+
+// firstContainer.addEventListener('mouseout', function(){
+//     console.log("Mouse out of container");
+// })
+
+let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
+firstContainer.addEventListener('mouseup', function(){
+    document.querySelectorAll('.container')[1].innerHTML = prevHTML;
+    console.log("Mouse up when clicked on container");
+})
+
+firstContainer.addEventListener('mousedown', function(){
+    document.querySelectorAll('.container')[1].innerHTML = "<b> We have clicked</b>"
+    console.log("Mouse down when clicked on container");
+})
+
+
+// 14. Arrow Functions
+// function summ(a,b){
+//     return a+b;
+// }
+
+//OR
+
+// summ = (a,b)=>{
+//     return a+b;
+// }
+
+// 15. SetTimeout and SetInterval 
+// logKaro = ()=>{
+//     document.querySelectorAll('.container')[1].innerHTML = "<b>Set interval fired</b>"
+//     console.log("I am your log");
+// }
+// setTimeout(logKaro, 2000);
+// clr = setInterval(logKaro, 2000);
+//clearInterval(clr);
+// use clearInterval(clr)/clearTimeout(clr) to cancel setInterval/setTimeout
+
+console.clear();
+// 16. Local storage in JS
+//in console
+/*
+localStorage.setItem('name', 'anvita')
+localStorage
+localStorage.getItem('name')
+localStorage.removeItem('name')
+localStorage.clear()
+*/
+
+// 17. JSON
+// obj = {name: "anvita", length: 1, a: {this: 'tha"t'}}
+// jso = JSON.stringify(obj);
+// console.log(typeof jso);
+// console.log(jso);
+// parsed = JSON.parse(`{"name":"anvita", "length":1, "a":{"this":"tha\\"t"}}`);
+// console.log(parsed);
+
+// 18. Template literals - Backticks
+a = 34;
+console.log(`this is my ${a}`)
