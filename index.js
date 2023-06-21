@@ -113,3 +113,65 @@ else if (age > 32){
 else{
     console.log('You are a kid');
 }
+
+// 8. Loops in JS
+var arr = [1,2,3,4,5,6,7];
+console.log(arr);
+for(var i=0; i<arr.length; i++){
+    if(i==2){
+        //break;
+        continue;
+    }
+    console.log(arr[i]);
+}
+
+// arr.forEach(function(element){
+//     console.log(element);
+// })
+
+//const ac = 0;
+//ac = ac + 1;  //error
+// let j = 0;
+// while(j<arr.length){
+//     console.log(arr[j]);
+//     j++;
+// }
+
+// do{
+//     console.log(arr[j]);
+//     j++;
+// }while(j<arr.length);
+
+// 9. Array Methods
+let myArr = ["Fan", "Camera", 34, null, true];
+console.log(myArr.length);
+myArr.pop();
+//myArr.push("anvita");
+myArr.shift();
+//myArr.unshift("anvita");
+console.log(myArr.unshift("anvita"));  //gives length
+//myArr.toString();
+console.log(myArr);
+let myArr2 = [1,4,3,2,6];
+myArr2.sort();
+console.log(myArr2);
+
+// 10. String Methods
+let myStr = "Anvita is a good girl is is"
+console.log(myStr);
+console.log(myStr.length);
+console.log(myStr.indexOf("is"));
+console.log(myStr.lastIndexOf("is"));
+console.log(myStr.slice(0,3));
+d = myStr.replace("Anvita", "Rohan");
+d = d.replace("good", "bad");
+console.log(d, myStr);
+
+// 11. Dates in JS
+// let myDate = new Date();
+// console.log(myDate);
+// console.log(myDate.getTime());
+// console.log(myDate.getFullYear());
+// console.log(myDate.getDay());
+// console.log(myDate.getMinutes());
+// console.log(myDate.getHours());
