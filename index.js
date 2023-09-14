@@ -17,7 +17,7 @@
 //Containers to store data values
 
 /*
-multi
+multix
 line
 comment
 */
@@ -245,6 +245,13 @@ firstContainer.addEventListener('mousedown', function(){
     console.log("Mouse down when clicked on container");
 })
 
+// function Greeting(age, loc){
+//     var name = prompt("What is your name?");
+//     alert("Hi "+ name +", Your age is "+ age+" You live in "+loc);
+// }
+
+// Greeting(20, "Mumbai");
+// alert("This is a msg");
 
 // 14. Arrow Functions
 // function summ(a,b){
