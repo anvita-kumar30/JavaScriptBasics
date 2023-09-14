@@ -26,6 +26,9 @@ var number1 = 34;
 var number2 = 56;
 console.log(number1 + number2);
 
+// var name = prompt("What is your name?");
+// alert("Hi "+ name + ", Welcome!");
+
 // 4. Data types in JS
 //Numbers
 var num1 = 455;
