@@ -1,7 +1,10 @@
 // 1. Ways to print in JS
 //console.log("Hello World");
 //alert("me");
+//prompt("What is your name?");    //an input field will also appear
 //document.write("This is document write");
+//typeof("Anvita");   //'string' o/p
+//typeof('Anvita');   //'string' o/p
 
 // 2. JavaScript console API
 //console.log("Hello World", 4 + 6, "Another log");
